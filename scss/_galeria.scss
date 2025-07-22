@@ -2,7 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-  
+  /*Estilos de imagenes para la galerìa*/
     .filas-imagen-texto {
       display: flex;
       flex-direction: column;
@@ -52,7 +52,7 @@
       }
     }
   
-    
+    /*Responsive de las imágenes*/
     @media (max-width: 768px) {
       padding: 1rem;
   
