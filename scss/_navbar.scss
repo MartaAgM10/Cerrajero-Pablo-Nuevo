@@ -1,0 +1,71 @@
+@use "variables" as *;
+
+.navbar {
+  background: $bg-navbar;
+  height: auto;
+  padding: 0.5rem 1rem;
+
+  .nav-link{
+    color:aliceblue;
+    font-size: 1rem;
+    padding: 10px 15px;
+    font-weight: bold;
+
+    &:hover {
+      color: #052241; 
+      text-decoration: none; 
+      transition: color 0.3s ease; 
+  }
+  }
+
+  .navbar-brand img {
+    width: 80px;
+    max-height: 80px;
+  }
+  
+  .navbar-toggler {
+    background-color: transparent;
+    border: none;
+    color: white;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+
+    .navbar-brand img {
+      width: 60px;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      padding: 8px 10px;
+    }
+
+    .navbar-collapse {
+      width: 100%;
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
